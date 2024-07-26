@@ -114,6 +114,7 @@ button:focus,
 
 .page-header__item {
     flex: 0 1 200px;
+    width: 200px;
 }
 
 .page-header__item:last-child {
