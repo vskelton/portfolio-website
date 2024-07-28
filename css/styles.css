@@ -95,8 +95,6 @@ button:focus,
     display: flex;
     flex-direction: column;
     text-align: center;
-    bottom: 0;
-    position: relative;
 }
 
 .profile {
