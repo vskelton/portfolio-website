@@ -91,6 +91,10 @@ button:focus,
 }
 
 .profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
     max-width: 700px;
     margin: 0 auto;
 }
@@ -164,6 +168,22 @@ button:focus,
 
 *{ -webkit-box-sizing: border-box; box-sizing: border-box
 
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 @media all and (max-width: 750px) {
