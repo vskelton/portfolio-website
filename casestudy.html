@@ -1,13 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Movie App Case Study | Vanessa Skelton</title>
-  <link rel="stylesheet" type="text/css" href="css/style.casestudy.css">
-  
+  <link rel="stylesheet" type="text/css" href="css/casestudy.css">
+
 </head>
+
 <body>
-  
+  <main>
+    <header>
+      <h1> Movie App Case Study</h1>
+    </header>
+
+    <section>
+      <h2>Project Overview</h2>
+      <img src="img/Mainview.png" width="700px" alt="Screenshot of the myFlix movie app main view" class="screenshot">
+      <p>The myFlix movie app is a single-page web application that provides users with access to information about
+        movies, directors, and genres</p>
+      <p>Users can create a profile, login, view movie information such as , the genre, the description, and the
+        director of the movie. Users are also able to update their profile information and add and remove movies from
+        their favorites list.</p>
+    </section>
+
+    <section>
+      <h2>Project Goals</h2>
+      <ul>
+        <li>To create a single-page web application that allows users to view and interact with movie data.</li>
+        <li>To implement user authentication and profile management.</li>
+        <li>To provide a responsive and user-friendly interface.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Technical Details</h2>
+      <h3>Tools & Technologies Used</h3>
+      <ul>
+        <li>React.js for building the user interface</li>
+        <li>Redux for state management</li>
+        <li>Node.js and Express for the backend server</li>
+        <li>MongoDB for the database</li>
+        <li>RESTful API for data communication</li>
+      </ul>
+
+      <h3>Application Architecture</h3>
+      <p>The application follows a client-server architecture where the React frontend communicates with the Node.js
+        backend via RESTful API endpoints. The backend handles data storage and retrieval from MongoDB.</p>
+
+      <h3>Component Structure</h3>
+      <p>The application is structured into several components, including:</p>
+      <ul>
+        <li><strong>MainView</strong>: The main component that renders the application.</li>
+        <li><strong>MovieView</strong>: Displays a list of movies.</li>
+        <li><strong>MovieCard</strong>: Shows detailed information about a selected movie.</li>
+        <li><strong>ProfileView</strong>: Allows users to view and update their profile information.</li>
+        <li><strong>LoginView</strong>: Handles user authentication.</li>
+        <li><strong>SignupView</strong>: Allows new users to register.</li>
+      </ul>
+
+      <h3>API Integration</h3>
+      <p>The application interacts with a RESTful API to fetch movie data, user profiles, and handle authentication.</p>
+    </section>
+
+    <section>
+      <h2>Challenges & Solutions</h2>
+      <p>One of the main challenges was ensuring secure user authentication and data handling. This was addressed by
+        implementing JWT (JSON Web Tokens) for secure token-based authentication.</p>
+      <p>Another challenge was managing state across the application, which was resolved by using Redux for efficient
+        state management.</p>
+    </section>
+
+    <section>
+      <h2>Future Improvements</h2>
+      <p>Future improvements could include:</p>
+      <ul>
+        <li>Adding more advanced search and filter functionalities for movies.</li>
+        <li>Implementing a review system for users to rate and review movies.</li>
+        <li>Enhancing the user interface with more interactive elements.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Conclusion</h2>
+      <p>The myFlix movie app successfully provides users with a platform to explore and interact with movie data. The
+        application is built using modern web technologies, ensuring a responsive and user-friendly experience.</p>
+      <p>For more details, you can view the source code on <a href="https://github.com/vskelton/myFlix-client.git"
+          target="_blank">GitHub</a>.</p>
+    </section>
+  </main>
 </body>
+
 </html>
