@@ -19,11 +19,15 @@
       <h2>Project Overview</h2>
       <img src="img/Mainview.png" width="700px" alt="Screenshot of the myFlix movie app main view" class="screenshot">
       <p>The myFlix movie app is a single-page web application that provides users with access to information about
-        movies, directors, and genres</p>
+        movies, directors, and genres.</p>
       <p>Users can create a profile, login, and view movie information such as, the genre, the description, and the
         director of the movie. Users are also able to update their profile information and add and remove movies from
         their favorites list.</p>
-      <p></p>
+      <p>My role for this project was to create the server-side and client-side from scratch and link both together to have a complete web
+        application.</p>
+      <p>The duration of the this project took about 2 weeks. I spent one week working on the server-side and creating
+        the database for the movies. The second week I spent working on the client side of the project, creating the
+        different views and adding the API Intergration to have a complete full-stack project.</p>
     </section>
 
     <section>
@@ -32,6 +36,7 @@
         <li>To create a single-page web application that allows users to view and interact with movie data.</li>
         <li>To implement user authentication and profile management.</li>
         <li>To provide a responsive and user-friendly interface.</li>
+        <li>To utilize modern web technologies for both the client-side and server-side development.</li>
       </ul>
     </section>
 
@@ -47,8 +52,25 @@
       </ul>
 
       <h3>Application Architecture</h3>
-      <p>The application follows a client-server architecture where the React frontend communicates with the Node.js
-        backend via RESTful API endpoints. The backend handles data storage and retrieval from MongoDB.</p>
+      <h4>Server-side</h4>
+      <p>I created a RESTful API using Node.js and Express. The API interacts with a non-relational database, MongoDB.
+        The server handles requests for movie data, user profiles, and authentication. The API can be accessed via
+        commonly used HTTP methods like GET or POST.
+        To test the API, I used Postman to send requests and verify the responses. I also included user authentication
+        and authorization code in the form of basic HTTP authenticationand JWT authentication
+      </p>
+      <img src="img/Heroku GET List of Movies.png" width="700px" alt="Screenshot of Postman testing the API"
+        class="screenshot">
+
+      <h4>Client-Side</h4>
+      <p>After finishing the server-side, I started to build the interface users would need when making requests to, and
+        receiving responses from the server-side.
+        The client-side is built using React.js, which allows for a dynamic and responsive user interface. I used React
+        Router to manage navigation between different views of the application.
+        The client-side communicates with the server-side API to fetch movie data and user profiles. I also implemented
+        Redux for state management, allowing for efficient data handling across components.
+      </p>
+
 
       <h3>Component Structure</h3>
       <p>The application is structured into several components, including:</p>
@@ -67,10 +89,7 @@
 
     <section>
       <h2>Challenges & Solutions</h2>
-      <p>One of the main challenges was ensuring secure user authentication and data handling. This was addressed by
-        implementing JWT (JSON Web Tokens) for secure token-based authentication.</p>
-      <p>Another challenge was managing state across the application, which was resolved by using Redux for efficient
-        state management.</p>
+      <p></p>
     </section>
 
     <section>
@@ -87,6 +106,14 @@
       <h2>Conclusion</h2>
       <p>The myFlix movie app successfully provides users with a platform to explore and interact with movie data. The
         application is built using modern web technologies, ensuring a responsive and user-friendly experience.</p>
+
+      <p>This project helped reinforce the importance of planning component architecture before implementation.
+        I also gained valuable experience in full-stack development, from setting up the server-side API to creating a
+        dynamic client-side application.
+      </p>
+
+      <p>This project helped improve my skills in building single-page applications, implementing user authentication, integrating front-end applications with RESTful APIs, along with many other skills.</p>
+
       <p>For more details, you can view the source code on <a href="https://github.com/vskelton/myFlix-client.git"
           target="_blank">GitHub</a>.</p>
     </section>
