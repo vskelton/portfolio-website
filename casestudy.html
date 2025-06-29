@@ -23,7 +23,8 @@
       <p>Users can create a profile, login, and view movie information such as, the genre, the description, and the
         director of the movie. Users are also able to update their profile information and add and remove movies from
         their favorites list.</p>
-      <p>My role for this project was to create the server-side and client-side from scratch and link both together to have a complete web
+      <p>My role for this project was to create the server-side and client-side from scratch and link both together to
+        have a complete web
         application.</p>
       <p>The duration of the this project took about 2 weeks. I spent one week working on the server-side and creating
         the database for the movies. The second week I spent working on the client side of the project, creating the
@@ -59,7 +60,7 @@
         To test the API, I used Postman to send requests and verify the responses. I also included user authentication
         and authorization code in the form of basic HTTP authenticationand JWT authentication
       </p>
-      <img src="img/Heroku GET List of Movies.png" width="700px" alt="Screenshot of Postman testing the API"
+      <img src="img/Heroku GET List of Movies.png" width="500px" alt="Screenshot of Postman testing the API"
         class="screenshot">
 
       <h4>Client-Side</h4>
@@ -70,6 +71,9 @@
         The client-side communicates with the server-side API to fetch movie data and user profiles. I also implemented
         Redux for state management, allowing for efficient data handling across components.
       </p>
+      <img src="img/loginview.png" width="500px" alt="Screenshot of the myFlix movie app login view" class="screenshot">
+      <img src="img/profileview.png" width="500px" alt="Screenshot of the myFlix movie app profile view"
+        class="screenshot">
 
 
       <h3>Component Structure</h3>
@@ -89,7 +93,49 @@
 
     <section>
       <h2>Challenges & Solutions</h2>
-      <p></p>
+      <p>Developing myFlix presented several interesting technical challenges that required thoughtful solutions to
+        ensure a robust and user-friendly application. Overcoming these hurdles significantly enhanced my understanding
+        of full-stack development.</p>
+
+      <h3>Challenge 1: Securing User Authentication and Authorization</h3>
+      <p>Initially, I considered basic HTTP authentication for user logins. However, for a more secure, scalable, and
+        stateless application, a more robust token-based system was necessary to protect user data and maintain a smooth
+        user experience across sessions without repeatedly sending credentials.</p>
+      <h4>Solution: Implementing JWT Authentication</h4>
+      <p>To address this, I integrated **JSON Web Tokens (JWT)** for authentication. Upon successful login, the server
+        generates a cryptographically signed JWT containing user-specific data, which is then sent to the client. This
+        token is securely stored (e.g., in local storage) and included as a bearer token in the `Authorization` header
+        of subsequent API requests. On the server-side, a dedicated middleware verifies the token's authenticity and
+        expiration, and extracts user information, ensuring that only authenticated and authorized users can access
+        protected routes. This significantly bolstered security and improved the overall user experience by enabling
+        persistent sessions without constant re-authentication.</p>
+
+      <h3>Challenge 2: Efficient State Management Across Disparate Components</h3>
+      <p>As the application grew and different components (e.g., `MovieCard`, `ProfileView`) needed to access and update
+        shared data like user favorite lists or movie details, managing the application's state became increasingly
+        complex. Directly passing props through multiple layers of components (known as "prop drilling") would have led
+        to convoluted, hard-to-debug, and unmaintainable code.</p>
+      <h4>Solution: Leveraging Redux for Centralized State Management</h4>
+      <p>To overcome state management complexities, I adopted **Redux** for centralized state management. By defining a
+        single, immutable store, all application data—including user authentication status, favorite movies, and the
+        main movie list—could be managed in one predictable location. Reducers were meticulously designed to handle
+        state transitions based on dispatched actions, ensuring data consistency and simplifying updates. This approach
+        dramatically streamlined data flow, made debugging more straightforward with the Redux DevTools, and
+        significantly improved the overall maintainability and scalability of the client-side application, especially as
+        new features were introduced.</p>
+
+      <h3>Challenge 3: Cross-Origin Resource Sharing (CORS) Issues During API Integration</h3>
+      <p>During local development, a common hurdle encountered was Cross-Origin Resource Sharing (CORS) errors. These
+        occurred when the React client (typically running on `localhost:3000`) attempted to make API requests to the
+        Node.js backend (running on a different port, e.g., `localhost:8080`). Browser security policies prevent such
+        cross-origin requests by default, leading to blocked responses.</p>
+      <h4>Solution: Configuring CORS on the Server and Client-side Proxy</h4>
+      <p>To resolve CORS issues, I implemented a two-pronged approach. On the server-side, I used the `cors` npm package
+        in my Express application to explicitly configure the appropriate CORS headers, allowing requests from the
+        client's origin. For local development convenience and to provide a more seamless development experience, I also
+        utilized the proxy feature in the React application's `package.json`. This redirected API requests from the
+        client's development server through the proxy to the backend, effectively bypassing the browser's CORS
+        restrictions during development and streamlining the integration process.</p>
     </section>
 
     <section>
@@ -112,7 +158,8 @@
         dynamic client-side application.
       </p>
 
-      <p>This project helped improve my skills in building single-page applications, implementing user authentication, integrating front-end applications with RESTful APIs, along with many other skills.</p>
+      <p>This project helped improve my skills in building single-page applications, implementing user authentication,
+        integrating front-end applications with RESTful APIs, along with many other skills.</p>
 
       <p>For more details, you can view the source code on <a href="https://github.com/vskelton/myFlix-client.git"
           target="_blank">GitHub</a>.</p>
