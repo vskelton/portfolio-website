@@ -21,27 +21,142 @@
     <nav class="mani-navigation page-header__item">
       <ul role="menubar" class="navigation-list">
         <li role="presentation">
-          <a href="index.html" role="menuitem" class="navigation-list__item--active">Home</a>
+          <a href="#home" role="menuitem" class="navigation-list__item--active">Home</a>
         </li>
         <li role="presentation">
-          <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
+          <a href="#about" role="menuitem" class="navigation-list__item">About</a>
         </li>
         <li role="presentation">
-          <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+          <a href="#work" role="menuitem" class="navigation-list__item">Work</a>
         </li>
         <li role="presentation">
-          <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+          <a href="#contact" role="menuitem" class="navigation-list__item">Contact</a>
         </li>
       </ul>
     </nav>
   </header>
 
-  <div class="profile">
+  <div class="profile" id="home">
     <img src="img/IMG_3706.jpg" class="profile__portrait" alt="A photograph of Vanessa">
     <h1>Hello World</h1>
     <p>My name is Vanessa Skelton. I am a <span>web</span> developer from Florida.</p>
     <a href="https://github.com/vskelton">Check out some of my code.</a>
   </div>
+
+  <div class="about-me-content" id="about">
+    <h1>About Me</h1>
+    <br>
+    <p>Hello. My name is Vanessa Skelton, and I am a passionate and dedicated Full-Stack Web Developer. With a strong
+      foundation in customer service from fast-paced environments like telecommunications, healthcare, and the
+      automotive industry, I bring a unique, customer-centric perspective to every project I build.</p>
+  </div>
+
+  <div class="work-content" id="work">
+
+    <h1>Work</h1>
+    <div class="grid">
+
+      <div class="grid__item">
+        <h2>Portfolio Website</h2>
+        <p>
+          Yup, this site that you are currently viewing.
+          I created this portfolio website as a beginning project to showcase my skills and projects.
+          It is built with HTML, CSS, and JavaScript.
+        </p>
+        <a href="https://github.com/vskelton/portfolio-website.git" target="_blank">See project on GitHub</a>
+      </div>
+
+      <div class="grid__item">
+        <h2>PokeDex</h2>
+        <img src="img/pokedex1.png" width="200" alt="Screenshot of PokeDex">
+        <p>
+          With this project, I created a small web application that loads data from an external API and enables the
+          viewing of data points.
+          The web app was built with HTML, CSS, and JavaScript. It is also styled with Bootstrap.
+          The web app is hosted with GitHub Pages.
+        </p>
+        <a href="https://vskelton.github.io/PokeDex/" target="_blank">See live project</a>
+        <br>
+        <a href="https://github.com/vskelton/PokeDex.git" target="_blank">See project on GitHub</a>
+      </div>
+
+      <div class="grid__item">
+        <h2>MovieAPI</h2>
+        <img src="img/Heroku GET List of Movies.png" width="200" alt="Screenshot of Postman Test">
+        <p>
+          With this project, I created the server-side of a movie web application.
+          The application provides user with access to information about different movies, directors, and genres.
+          The app is hosted on Heroku. The tech stack used to build the app is MongoDB, Express, React, and Node.js.
+        </p>
+        <a href="https://vanessamovieapi-02068b25de4f.herokuapp.com/" target="_blank">See live project</a>
+        <br>
+        <a href="https://github.com/vskelton/MovieAPI.git" target="_blank">See project on GitHub</a>
+      </div>
+
+      <div class="grid__item">
+        <h2>myFlix Movie App</h2>
+        <img src="img/Mainview.png" width="200" alt="Screenshot of myFlix React app">
+        <p>
+          With this project, I created the client-side of a movie web application.
+          The application was built with React, React Bootstrap and uses the existing server-side code (REST API and
+          Database).
+          The application is hosted on Netlify.
+        </p>
+        <a href="https://vanessamyflix.netlify.app/" target="_blank">See live project</a>
+        <br>
+        <a href="https://github.com/vskelton/myFlix-client.git" target="_blank">See project on GitHub</a>
+        <br>
+        <a href="casestudy.html" target="_blank">See Case Study</a>
+      </div>
+
+      <div class="grid__item">
+        <h2>Meet App</h2>
+        <img src="img/MeetApp.png" width="200" alt="Screenshot of Meet App">
+        <p>
+          With this project, I created a serverless, progressive web application.
+          Users are able to see different events, sort through different events and filter how many events you want to
+          see at one time.
+          The app was created with Google Calendar API, React, and AWS serverless functions and is hosted on Vercel.
+        </p>
+        <a href="https://meet-five-theta.vercel.app/" target="_blank">See live project</a>
+        <br>
+        <a href="https://github.com/vskelton/Meet.git" target="_blank">See project on GitHub</a>
+      </div>
+
+      <div class="grid__item">
+        <h2>New Chat App</h2>
+        <img src="img/Chatapphome.png" width="200" height="400" alt="Screenshot of Chat app">
+        <p>
+          New Chat App is a React Native app for mobile devices.
+          The app provides users with a chat interface and options to share images and their locations.
+          This app was built with Expo and React Native.
+        </p>
+        <a href="https://github.com/vskelton/newchatapp.git" target="_blank">See project on GitHub</a>
+      </div>
+
+      <div class="grid__item">
+        <h2>myFlix Angular App</h2>
+        <img src="img/myFlixangular.png" width="200" alt="Screenshot of myFlix-Angular-app">
+        <p>
+          With this project, I created the client-side for a movie wbe application called myFlix.
+          This project is based on the existing server-side code and has supporting documentation.
+          This app was built with Angular and TypeScript. It is hosted with GitHub Pages.
+        </p>
+        <a href="https://vskelton.github.io/myFlix-Angular-app/" target="_blank">See live project</a>
+        <br>
+        <a href="https://github.com/vskelton/myFlix-Angular-client.git" target="_blank">See project on GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-content" id="contact">
+    <h1>Contact Me</h1>
+    <p>If you would like to get in touch, you can find me on <a href="https://linkedin.com/in/vanessa-skelton25"
+        target="_blank">LinkedIn</a>
+      or you can email me at <a href="mailto:vanessa.skelton8@gmail.com" target="_blank">vanessa.skelton8@gmail.com</a>
+    </p>
+  </div>
+
 
   <footer class="page-footer">
     <p>Find me on</p>
