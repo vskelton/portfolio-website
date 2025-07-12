@@ -163,6 +163,40 @@ button:focus,
   opacity: 1;
 }
 
+.work-content {
+  max-width: 700px; /* Consistent max-width */
+  margin: 0 auto; /* Center the content */
+  padding: 20px; /* Add padding around the content */
+  text-align: center; /* Center the text, including the button */
+}
+
+.work-content h1 {
+  font-size: 2.5em; /* Heading 1 style */
+  margin-bottom: 20px;
+}
+
+.work-content p {
+  line-height: 1.7; /* Improved line height for paragraph */
+  margin-bottom: 20px;
+}
+
+.contact-content {
+  max-width: 700px; /* Consistent max-width */
+  margin: 0 auto; /* Center the content */
+  padding: 20px; /* Add padding around the content */
+  text-align: center; /* Center the text, including the button */
+}
+
+.contact-content h1 {
+  font-size: 2.5em; /* Heading 1 style */
+  margin-bottom: 20px;
+}
+
+.contact-content p {
+  line-height: 1.7; /* Improved line height for paragraph */
+  margin-bottom: 20px;
+}
+
 .page-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -213,6 +247,51 @@ button:focus,
   background-color: #faedcd;
 }
 
+.skills-content {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills-grid__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #faedcd;
+  margin: 0 auto;
+}
+
+.skills-grid__item i {
+  font-size: 3rem;
+  color: #555;
+  transition: transform 0.3s ease-in-out;
+}
+
+.skills-grid__item:hover i {
+  transform: scale(1.1);
+  color: #d4a373;
+}
+
+.skills-grid__item-label {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #333;
+  text-align: center;
+}
+
 .grid-item:last-child {
   -ms-grid-column: 3;
   grid-column-start: 3;
@@ -257,7 +336,7 @@ button:focus,
   }
 }
 
-@media all and (max-width: 750) {
+@media all and (max-width: 750px) {
   .grid {
     grid-gap: 10px;
   }
