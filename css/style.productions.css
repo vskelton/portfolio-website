@@ -180,6 +180,19 @@ button:focus,
   margin-bottom: 20px;
 }
 
+.work-content a.button {
+  /* Button styles are already defined, but ensuring consistency */
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #d4a373;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
 .contact-content {
   max-width: 700px; /* Consistent max-width */
   margin: 0 auto; /* Center the content */
