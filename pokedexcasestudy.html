@@ -17,23 +17,42 @@
     <section>
       <h2> Project Overview</h2>
       <img src="img/pokedex1.png" width="700px" alt="PokeDex Screenshot" class="screenshot">
-      <p>The PokeDex is a single page web application that allows users to view a list of Pokemon. Users are also able
-        to view additional details of the Pokemon.</p>
-      <p>My role for the project was to create a web application that fetched the PokeDex API with HTML, CSS, and
-        JavaScript. I also implemented Bootstrap to help
-        make the application responsive.
-      </p>
-      <p>The duration of the project took me about one week to complete. Since JavaScript was completely new to me, I
-        made sure to take my time learning how to use it and create a responsive web appplication.
-        This project was built as part of my coursework through CareerFoundry.</p>
+      <p>The PokeDex is a single page web application that allows users to view a list of Pokemon and access additional details for each.</p>
+      <p>My role for the project was to create a responsive web application that fetches data from the PokeAPI using HTML, CSS, and JavaScript.  I also integrated Bootstrap to ensure a seamless user experience across various devices.</p>
+      <p>This project was completed over approximately one week as part of my coursework through CareerFoundry.  As JavaScript was a new language for me, I focused on thoroughly understanding its concepts to build a functional and responsive application.</p>
+    </section>
+
+    <section>
+      <h2>Problem & Opportunity</h2>
+      <p>Before beginning this project, I identified an opportunity to apply my emerging web development skills to create an interactive and informative resource.  The goal was to move beyond stattic data presentation and build a dynamic application where uesers could easily browse a large dataset (Pokemon) and retrieve specific details on demand.  This also served as a practical challenge to master asynchronous JavaScript and API integration.</p>
     </section>
 
     <section>
       <h2>Project Goals</h2>
       <ul>
         <li>Load data from an external API(PokeAPI)</li>
-        <li>Display a list of items</li>
-        <li>On user action(e.g., clicking on a list item), view details for that item.</li>
+        <li>Display a comprehensive list of items</li>
+        <li>Enable users to view detailed information for an item upon interaction (e.g., clicking on a list item).</li>
+        <li>Ensure the application is fully responsive across different screen sizes.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Process and & Development Steps</h2>
+      <h3>1. Planning & Research</h3>
+      <p>I began by researching the PokeAPI documentation to understand its structure and how to efficiently fetch the neccessary data.</p>
+      <h3>2. Implementation</h3>
+      <p>The core of the application involes using JavaScript's 'fetch' API with 'async/wait' to retrieve Pokemon data.  I dynamically creaated list items for each Pokemon and appended them to the DOM.  Event listeners were added to each item to trigger a modal that displayed additional details (height, types, abilities) fetched from a secondary API endpoint.  Bootstrap's grid system and components were utilized to ensure the layout adapted smoothly to various viewport sizes.</p>
+      <h3>3. Testing</h3>
+      <p>Throughout development, I performed regular testing to ensure data was loaded correctly, interactions triggered as expected, and the UI remained consistent across desktop and mobile views.  This involved checking API responses, debugging console errors, and manually resizing the browser window.</p>
+    </section>
+
+    <section>
+      <h2>Challenges & Solutions</h2>
+      <p>Developing the Pokedex web application presented a few different challenges that required some thoughtful solutions.</p>
+      <ul>
+        <li>**Challenge: Asynchronous Data Handling:** Initially, managing asynchronous API calss and ensuring data was available before rendering presented a learning curve.
+        </li>
       </ul>
     </section>
 
@@ -50,10 +69,7 @@
       </ul>
     </section>
 
-    <section>
-      <h2>Challenges & Solutions</h2>
-      <p>Developing the Pokedex web application presented a few different challenges that required some thoughtful solutions.</p>
-    </section>
+    
 
     <section>
       <h2>View Live Project</h2>
