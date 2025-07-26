@@ -24,7 +24,7 @@
 
     <section>
       <h2>Problem & Opportunity</h2>
-      <p>Before beginning this project, I identified an opportunity to apply my emerging web development skills to create an interactive and informative resource.  The goal was to move beyond stattic data presentation and build a dynamic application where uesers could easily browse a large dataset (Pokemon) and retrieve specific details on demand.  This also served as a practical challenge to master asynchronous JavaScript and API integration.</p>
+      <p>Before beginning this project, I identified an opportunity to apply my emerging web development skills to create an interactive and informative resource.  The goal was to move beyond static data presentation and build a dynamic application where users could easily browse a large dataset (Pokemon) and retrieve specific details on demand.  This also served as a practical challenge to master asynchronous JavaScript and API integration.</p>
     </section>
 
     <section>
@@ -38,11 +38,11 @@
     </section>
 
     <section>
-      <h2>Process and & Development Steps</h2>
+      <h2>Process & Development Steps</h2>
       <h3>1. Planning & Research</h3>
-      <p>I began by researching the PokeAPI documentation to understand its structure and how to efficiently fetch the neccessary data.</p>
+      <p>I began by researching the PokeAPI documentation to understand its structure and how to efficiently fetch the necessary data.</p>
       <h3>2. Implementation</h3>
-      <p>The core of the application involes using JavaScript's 'fetch' API with 'async/wait' to retrieve Pokemon data.  I dynamically creaated list items for each Pokemon and appended them to the DOM.  Event listeners were added to each item to trigger a modal that displayed additional details (height, types, abilities) fetched from a secondary API endpoint.  Bootstrap's grid system and components were utilized to ensure the layout adapted smoothly to various viewport sizes.</p>
+      <p>The core of the application involves using JavaScript's 'fetch' API with 'async/await' to retrieve Pokemon data.  I dynamically creaated list items for each Pokemon and appended them to the DOM.  Event listeners were added to each item to trigger a modal that displayed additional details (height, types, abilities) fetched from a secondary API endpoint.  Bootstrap's grid system and components were utilized to ensure the layout adapted smoothly to various viewport sizes.</p>
       <h3>3. Testing</h3>
       <p>Throughout development, I performed regular testing to ensure data was loaded correctly, interactions triggered as expected, and the UI remained consistent across desktop and mobile views.  This involved checking API responses, debugging console errors, and manually resizing the browser window.</p>
     </section>
@@ -51,8 +51,31 @@
       <h2>Challenges & Solutions</h2>
       <p>Developing the Pokedex web application presented a few different challenges that required some thoughtful solutions.</p>
       <ul>
-        <li>**Challenge: Asynchronous Data Handling:** Initially, managing asynchronous API calss and ensuring data was available before rendering presented a learning curve.
-        </li>
+        <li>Challenge: Asynchronous Data Handling: Initially, managing asynchronous API calls and ensuring data was available before rendering presented a learning curve.
+          Solution: I implemented 'async/await' syntax to handle promises more intuitively, allowing me to write cleaner and more readable code.</li>
+        <li>Challenge: Responsive Design: Ensuring the application looked good on both desktop and mobile devices was a challenge, especially with dynamic content.
+          Solution: I utilized Bootstrap's responsive grid system and components to create a flexible layout that adjusted seamlessly to different screen sizes.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Learning & Takeaways</h2>
+      <p>This project was incredibly valuable for solidifying my understanding of several core web development concepts:</p>
+      <ul>
+        <li>Mastering Asynchronous JavaScript: I gained hands-on experience with 'fetch' and 'async/await', which are fundamental for interacting with APIs.</li>
+        <li>Dynamic DOM Manipulation: I learned how to create and manipulate HTML elements dynamically using JavaScript, which is essential for building interactive applications.</li>
+        <li>Responsive Design Principles: I deepened my understanding of responsive design techniques, particularly using Bootstrap to create layouts that adapt to various devices.</li>
+        <li>API Integration: Successfully consuming and working with external APIs became much clearer</li>
+      </ul>
+      <p>If I were to approach this project again, I would likely integrate a client-side routing library earlier in the process to manage different views more efficiently, even for a single-page application, and explore more advanced error handling mechanisms for API calls.</p>
+    </section>
+
+    <section>
+      <h2>Future Enhancements</h2>
+      <p>Given more time, I would like to implement the following features:</p>
+      <ul>
+        <li>Improved UI/UX: Add custom animations for loading states and transitions, and potentially incorporate more detailed Pokemon statistics (e.g., base stats, evolution chains).</li>
+        <li>Accessibility Improvements: Conduct a thorough accessibility audit to ensure the application is usable by everyone.</li>
       </ul>
     </section>
 
@@ -66,10 +89,9 @@
         <li>External API</li>
         <li>Bootstrap</li>
         <li>GitHub Pages for Web Hosting</li>
+        <li>Visual Studio Code for Development</li>
       </ul>
     </section>
-
-    
 
     <section>
       <h2>View Live Project</h2>
