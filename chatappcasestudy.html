@@ -4,51 +4,130 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chat App Case Study | Vanessa Skelton</title>
+  <title>New Chat App Case Study | Vanessa Skelton</title>
   <link rel="stylesheet" href="css/casestudy.css">
 </head>
 
 <body>
   <main>
     <header>
-      <h1>Chat App Case Study</h1>
+      <h1>New Chat App Case Study</h1>
     </header>
 
     <section>
       <h2> Project Overview</h2>
+      <img src="img/Chatapphome.png" class="screenshot" width="500px" alt="Home screen for Chat app">
+      <p>The New Chat App is a custom-built mobile chat application developed using React Native and Expo. This project
+        addresses the need for a simple yet feature-rich communication tool, enabling users to engage in real-time text
+        conversations,
+        easily share photos directly from their gallery or camera, and transmit thier precise location.
+      </p>
+      <p>My role encompassed the complete mobile application lifecycle, from the initial concept and UI/UX design
+        considerations in React Native to integrating Google Firestore Databse for persistent chat data and ensuring
+        cross-platform functionality.
+        This app showcases my ability to build interactive and responsive mobile experiences.
+      </p>
     </section>
 
     <section>
       <h2>Problem & Opportunity</h2>
+      <p>Recognizing the growing demand for efficient mobile communication tools, I identified an opportunity to create
+        a chat application that not only supports text messaging but also enhances user interaction through multimedia
+        sharing and location services.
+        The goal was to develop a user-friendly app that could serve as a reliable platform for personal and group
+        conversations, while also being accessible on both iOS and Android devices.</p>
     </section>
 
     <section>
       <h2>Project Goals</h2>
+      <ul>
+        <li>Develop a cross-platform mobile chat application using React Native and Expo.</li>
+        <li>Enable users to send images from the gallery.</li>
+        <li>Allow users to capture and send photos directly from the camera.</li>
+        <li>Implement location sharing functionality to send the user's current location.</li>
+      </ul>
     </section>
 
     <section>
       <h2>Process & Development</h2>
+      <h3>1. Planning and Research</h3>
+      <p>I started by outlining the core features of the chat application and researching best practices for mobile app
+        development with React Native. I also explored various libraries for image handling and location services to
+        ensure a smooth user experience.</p>
+      <h3>2. Implementation</h3>
+      <p>The application was built using React Native, leveraging Expo for rapid development and testing. I implemented
+        Firebase Firestore for real-time data storage and retrieval, allowing users to send and receive messages
+        instantly. The app's UI was designed with a focus on simplicity and usability, ensuring that users could easily
+        navigate through conversations, send images, and share their location with minimal effort.</p>
+      <h3>3. Testing</h3>
+      <p>Throughout the development process, I conducted extensive testing on both iOS and Android devices to ensure
+        consistent performance and functionality. This included testing the image upload feature, location sharing, and
+        overall app responsiveness. I also gathered feedback from peers to refine the user interface and enhance the
+        overall user experience.</p>
     </section>
 
     <section>
       <h2>Challenges & Soultions</h2>
+      <p>Developing the New Chat App presented several challenges that required innovative solutions:</p>
+      <ul>
+        <li>Challenge: Cross-Platform Compatibility: Ensuring the app functioned seamlessly on both iOS and Android
+          devices was a significant challenge.
+          <br>
+          Solution: I utilized React Native's cross-platform capabilities and tested extensively on both platforms to
+          identify and resolve any inconsistencies.
+        </li>
+        <li>Challenge: Real-Time Data Synchronization: Implementing real-time messaging with Firebase Firestore required
+          careful management of data flow.
+          <br>
+          Solution: I used Firestore's real-time listeners to ensure that messages were updated instantly across all
+          devices, providing a smooth user experience.
+        </li>
+      </ul>
     </section>
 
     <section>
       <h2>Learning & Takeaways</h2>
+      <p>This project was instrumental in deepening my understanding of mobile app development, particularly with React
+        Native. Key takeaways include:</p>
+      <ul>
+        <li>Mastering the use of React Native for building cross-platform applications.</li>
+        <li>Gaining hands-on experience with Firebase Firestore for real-time data management.</li>
+        <li>Understanding the intricacies of mobile UI/UX design to enhance user engagement and satisfaction.</li>
+      </ul>
     </section>
 
     <section>
       <h2>Future Enhancements</h2>
+      <p>Given more time, I would like to implement the following features:</p>
+      <ul>
+        <li>Push Notifications: To alert users of new messages even when the app is not actively in use.</li>
+        <li>Group Chats: Allowing multiple users to participate in a single conversation.</li>
+        <li>Message Reactions: Enabling users to react to messages with emojis for more expressive communication.</li>
+      </ul>
     </section>
 
     <section>
       <h2>Technology Details</h2>
       <h3>Technologies & Tools Used</h3>
+      <ul>
+        <li>React Native: For building the mobile application.</li>
+        <li>Expo: For rapid development and testing of the app.</li>
+        <li>Firebase Firestore: For real-time data storage and retrieval.</li>
+        <li>JavaScript: As the primary programming language for the application logic.</li>
+      </ul>
     </section>
 
     <section>
       <h2>View Project</h2>
+      <p>View a live demo and it's code here:</p>
+      <div class="video-container">
+        <video controls muted playsinline poster="img/Chatapphome.png" class="responsive-video">
+          <source src="img/videos/chatappdemo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+      </div>
+
+      <a href="https://github.com/vskelton/newchatapp.git" target="_blank">GitHub Repository</a>
     </section>
   </main>
 
