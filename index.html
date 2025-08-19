@@ -5,236 +5,167 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/style.productions.css">
-  <title>Vanessa Portfolio</title>
+  <title>Vanessa Skelton | Full-Stack Developer</title>
   <link rel="shorcut icon" href="#">
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Imprima&display=swap" rel="stylesheet">
-
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <!-- Header/Navigation -->
   <header class="page-header">
-    <a href="index.html">
-      <img src="img/2.png.png" width="200" alt="logo" class="page-header__item">
-    </a>
-    <nav class="mani-navigation page-header__item">
-      <ul role="menubar" class="navigation-list">
-        <li role="presentation">
-          <a href="#home" role="menuitem" class="navigation-list__item--active">Home</a>
-        </li>
-        <li role="presentation">
-          <a href="#about" role="menuitem" class="navigation-list__item">About</a>
-        </li>
-        <li role="presentation">
-          <a href="#skills" role="menuitem" class="navigation-list__item">Skills</a>
-        </li>
-        <li role="presentation">
-          <a href="#work" role="menuitem" class="navigation-list__item">Work</a>
-        </li>
-        <li role="presentation">
-          <a href="#contact" role="menuitem" class="navigation-list__item">Contact</a>
-        </li>
-      </ul>
+    <img src="img/2.png.png" class="logo" width="200px" alt="Vanessa Skelton Logo">
+    <nav class="navbar">
+      <a href="#about" class="nav__link">About</a>
+      <a href="#skills" class="nav__link">Skills</a>
+      <a href="#projects" class="nav__link">Projects</a>
+      <a href="#contact" class="nav__link">Contact</a>
     </nav>
   </header>
 
-  <div class="profile" id="home">
-    <img src="img/IMG_3706.jpg" class="profile__portrait" alt="A photograph of Vanessa">
-    <h1>Hello World</h1>
-    <p>My name is Vanessa Skelton, a Full-Stack Developer with a passion for building user-centric web applications.  With a background in customer service, I bring a unique perspective to creating intuitive and reliable software.</p>
-    <a href="https://github.com/vskelton">Check out some of my code.</a>
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="img/IMG_3706.jpg" class="profile__portrait" alt="Portrait of Vanessa">
+    <h1>Hi, I'm Vanessa</h1>
+    <p class="tagline">Full-Stack Developer | Problem Solver | Lifelong Learner</p>
+    <a href="#projects" class="button">View My Work</a>
+  </section>
+  
+<!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a full-stack developer with experience in building responsive web applications using modern technologies.  With a background in customer-centric roles, I bring a unique perspective to designing solutions that put users first.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="skills-grid__item">HTML5 & CSS3</div>
+    <div class="skills-grid__item">Bootstrap</div>
+    <div class="skills-grid__item">JavaScript</div>
+    <div class="skills-grid__item">React</div>
+    <div class="skills-grid__item">Angular</div>
+    <div class="skills-grid__item">Node.js</div>
+    <div class="skills-grid__item">MongoDB</div>
+    <div class="skills-grid__item">SQL</div>
+    <div class="skills-grid__item">RESTful APIs</div>
+    <div class="skills-grid__item">Express</div>
+    <div class="skills-grid__item">Git/GitHub</div>
+    <div class="skills-grid__item">Agile & Scrum</div>
   </div>
+</section>
 
-  <div class="about-me-content" id="about">
-    <h1>About Me</h1>
-    <br>
-    <p>Hello. My name is Vanessa Skelton, and I am a passionate and dedicated Full-Stack Web Developer. With a strong
-      foundation in customer service from fast-paced environments like telecommunications, healthcare, and the
-      automotive industry, I bring a unique, customer-centric perspective to every project I build.</p>
+  <!-- Projects Section -->
 
-    <div>
-      <a href="files/Vanessa.Resume.pdf" class="button" target="_blank" download>View My Resume</a>
-    </div>
-
-  </div>
-
-  <div class="skills-content" id="skills">
-    <h1>Skills</h1>
-
-    <div class="skills-grid">
-      <div class="skills-grid__item">
-        <i class="fa-brands fa-html5 fa-3x"></i>
-        <p class="skills-grid__item-label">HTML</p>
-      </div>
-
-      <div class="skills-grid__item">
-        <i class="fa-brands fa-css3-alt fa-3x"></i>
-        <p class="skills-grid__item-label">CSS</p>
-      </div>
-
-      <div class="skills-grid__item">
-        <i class="fa-brands fa-square-js fa-3x"></i>
-        <p class="skills-grid__item-label">JavaScript</p>
-      </div>
-
-      <div class="skills-grid__item">
-        <i class="fa-brands fa-react fa-3x"></i>
-        <p class="skills-grid__item-label">React</p>
-      </div>
-
-      <div class="skills-grid__item">
-        <i class="fa-brands fa-node-js fa-3x"></i>
-        <p class="skills-grid__item-label">Node.js</p>
-      </div>
-
-      <div class="skills-grid__item">
-        <i class="fa-brands fa-git-alt fa-3x"></i>
-        <p class="skills-grid__item-label">Git</p>
-      </div>
-
-      <div class="skills-grid__item">
-        <i class="fa-brands fa-angular fa-3x"></i>
-        <p class="skills-grid__item-label">Angular</p>
-      </div>
-
-      <div class="skills-grid__item">
-        <i class="fa-brands fa-aws fa-3x"></i>
-        <p class="skills-grid__item-label">AWS</p>
-      </div>
-
-      <div class="skills-grid__item">
-        <i class="fa-brands fa-bootstrap fa-3x"></i>
-        <p class="skills-grid__item-label">Bootstrap</p>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="work-content" id="work">
-
-    <h1>Work</h1>
+  <section id="projects">
+    <h2>Projects</h2>
     <div class="grid">
-
       <div class="grid__item">
-        <h2>Portfolio Website</h2>
-        <p>
-          Yup, this site that you are currently viewing.
-          I created this portfolio website as a beginning project to showcase my skills and projects.
-          It is built with HTML, CSS, and JavaScript.
-        </p>
-        <a href="https://github.com/vskelton/portfolio-website.git" target="_blank">See project on GitHub</a>
-      </div>
-
-      <div class="grid__item">
-        <h2>PokeDex</h2>
-        <img src="img/pokedex1.png" width="200" alt="Screenshot of PokeDex">
+        <h3>PokeDex</h3>
+        <img src="img/pokedex1.png" width="200" alt="Screenshot of PokeDex" loading="lazy">
         <p>
           With this project, I created a small web application that loads data from an external API and enables the
           viewing of data points.
           The web app was built with HTML, CSS, and JavaScript. It is also styled with Bootstrap.
           The web app is hosted with GitHub Pages.
         </p>
-        <a href="https://vskelton.github.io/PokeDex/" target="_blank">See live project</a>
-        <br>
-        <a href="https://github.com/vskelton/PokeDex.git" target="_blank">See project on GitHub</a>
-        <br>
-        <a href="pokedexcasestudy.html" class="button" target="_blank">See Case Study</a>
+        <div class="project-links">
+        <a href="https://vskelton.github.io/PokeDex/" target="_blank" class="button">Live Demo</a>
+        <a href="https://github.com/vskelton/PokeDex.git" target="_blank" class="button">GitHub</a>
+        <a href="pokedexcasestudy.html" class="button" target="_blank">Case Study</a>
+        </div>
       </div>
 
       <div class="grid__item">
-        <h2>MovieAPI</h2>
-        <img src="img/Heroku GET List of Movies.png" width="200" alt="Screenshot of Postman Test">
+        <h3>MovieAPI</h3>
+        <img src="img/Heroku GET List of Movies.png" width="200" alt="Screenshot of Postman Test" loading="lazy">
         <p>
           With this project, I created the server-side of a movie web application.
           The application provides user with access to information about different movies, directors, and genres.
           The app is hosted on Heroku. The tech stack used to build the app is MongoDB, Express, React, and Node.js.
         </p>
-        <a href="https://vanessamovieapi-02068b25de4f.herokuapp.com/" target="_blank">See live project</a>
-        <br>
-        <a href="https://github.com/vskelton/MovieAPI.git" target="_blank">See project on GitHub</a>
+        <div class="project-links">
+        <a href="https://vanessamovieapi-02068b25de4f.herokuapp.com/" target="_blank" class="button">Live Demo</a>
+        <a href="https://github.com/vskelton/MovieAPI.git" target="_blank" class="button">GitHub</a>
+        </div>
       </div>
 
       <div class="grid__item">
-        <h2>myFlix Movie App</h2>
-        <img src="img/Mainview.png" width="200" alt="Screenshot of myFlix React app">
+        <h3>myFlix Movie App</h3>
+        <img src="img/Mainview.png" width="200" alt="Screenshot of myFlix React app" loading="lazy">
         <p>
           With this project, I created the client-side of a movie web application.
           The application was built with React, React Bootstrap and uses the existing server-side code (REST API and
           Database).
           The application is hosted on Netlify.
         </p>
-        <a href="https://vanessamyflix.netlify.app/" target="_blank">See live project</a>
-        <br>
-        <a href="https://github.com/vskelton/myFlix-client.git" target="_blank">See project on GitHub</a>
-        <br>
-        <a href="movieappcasestudy.html" class="button" target="_blank">See Case Study</a>
+        <div class="project-links">
+        <a href="https://vanessamyflix.netlify.app/" target="_blank" class="button">Live Demo</a>
+        <a href="https://github.com/vskelton/myFlix-client.git" target="_blank" class="button">GitHub</a>
+        <a href="movieappcasestudy.html" target="_blank" class="button">Case Study</a>
+        </div>
       </div>
 
       <div class="grid__item">
-        <h2>Meet App</h2>
-        <img src="img/MeetApp.png" width="200" alt="Screenshot of Meet App">
+        <h3>Meet App</h3>
+        <img src="img/MeetApp.png" width="200" alt="Screenshot of Meet App" loading="lazy">
         <p>
           With this project, I created a serverless, progressive web application.
           Users are able to see different events, sort through different events and filter how many events you want to
           see at one time.
           The app was created with Google Calendar API, React, and AWS serverless functions and is hosted on Vercel.
         </p>
-        <a href="https://meet-five-theta.vercel.app/" target="_blank">See live project</a>
-        <br>
-        <a href="https://github.com/vskelton/Meet.git" target="_blank">See project on GitHub</a>
+        <div class="project-links">
+        <a href="https://meet-five-theta.vercel.app/" target="_blank" class="button">Live Demo</a>
+        <a href="https://github.com/vskelton/Meet.git" target="_blank" class="button">GitHub</a>
+        </div>
       </div>
 
       <div class="grid__item">
-        <h2>New Chat App</h2>
-        <img src="img/Chatapphome.png" width="200" height="400" alt="Screenshot of Chat app">
+        <h3>New Chat App</h3>
+        <img src="img/Chatapphome.png" width="200" height="400" alt="Screenshot of Chat app" loading="lazy">
         <p>
           New Chat App is a React Native app for mobile devices.
           The app provides users with a chat interface and options to share images and their locations.
           This app was built with Expo and React Native.
         </p>
-        <a href="https://github.com/vskelton/newchatapp.git" target="_blank">See project on GitHub</a>
-        <br>
-        <a href="chatappcasestudy.html" class="button" target="_blank">See Case Study</a>
+        <div class="project-links">
+        <a href="https://github.com/vskelton/newchatapp.git" target="_blank" class="button">GitHub</a>
+        <a href="chatappcasestudy.html" target="_blank" class="button">Case Study</a>
+        </div>
       </div>
 
       <div class="grid__item">
-        <h2>myFlix Angular App</h2>
-        <img src="img/myFlixangular.png" width="200" alt="Screenshot of myFlix-Angular-app">
+        <h3>myFlix Angular App</h3>
+        <img src="img/myFlixangular.png" width="200" alt="Screenshot of myFlix-Angular-app" loading="lazy">
         <p>
           With this project, I created the client-side for a movie wbe application called myFlix.
           This project is based on the existing server-side code and has supporting documentation.
           This app was built with Angular and TypeScript. It is hosted with GitHub Pages.
         </p>
-        <a href="https://vskelton.github.io/myFlix-Angular-app/" target="_blank">See live project</a>
-        <br>
-        <a href="https://github.com/vskelton/myFlix-Angular-client.git" target="_blank">See project on GitHub</a>
+        <div class="project-links">
+        <a href="https://vskelton.github.io/myFlix-Angular-app/" target="_blank" class="button">Live Demo</a>
+        <a href="https://github.com/vskelton/myFlix-Angular-client.git" target="_blank" class="button">GitHub</a>
+      </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="contact-content" id="contact">
-    <h1>Contact Me</h1>
-    <p>If you would like to get in touch, you can find me on <a href="https://linkedin.com/in/vanessaskelton/"
-        target="_blank">LinkedIn</a>
-      or you can email me at <a href="mailto:vanessa.skelton8@gmail.com" target="_blank">vanessa.skelton8@gmail.com</a>
-    </p>
-  </div>
+  <!-- Contact Section -->
+  <section id="contact" class="container">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:vanessa.skelton8@gmail.com">vanessa.skelton8@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/vskelton" target="_blank">github.com/vskelton</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/vanessaskelton" target="_blank">linkedin.com/in/vanessaskelton</a></p>
+  </section>
 
-
-  <footer class="page-footer">
-    <p>Find me on</p>
-    <div class="social-media">
-      <a href="https://www.linkedin.com/in/vanessaskelton/" target="_blank">
-        <img src="img/104493_linkedin_icon.svg" alt="linkedin logo">
-      </a>
-
-      <a href="https://github.com/vskelton" target="blank">
-        <img src="img/211904_social_github_icon.svg" alt="github logo">
-      </a>
-    </div>
+<!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Vanessa Skelton.  All Rights Reserved.</p>
   </footer>
   <script src="https://kit.fontawesome.com/704f309f8c.js" crossorigin="anonymous"></script>
   <script src="js/tota11y.min.js"></script>
